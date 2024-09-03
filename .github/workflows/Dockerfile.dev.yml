@@ -68,17 +68,17 @@ jobs:
       with:
         ref: ${{ env.HEAD_SHA }}
     - name: Download Stellar-Core Image
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: image-stellar-core
         path: /tmp/stellar-core
     - name: Download Stellar-Horizon Image
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: image-stellar-horizon
         path: /tmp/stellar-horizon
     - name: Download Stellar-Friendbot Image
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: image-stellar-friendbot
         path: /tmp/stellar-friendbot
@@ -121,7 +121,7 @@ jobs:
       with:
         ref: ${{ env.HEAD_SHA }}
     - name: Download Quickstart Image
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: image-Dockerfile-dev
         path: /tmp/
